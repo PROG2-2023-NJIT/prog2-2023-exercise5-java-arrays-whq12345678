@@ -27,7 +27,7 @@ public class FlightBooking {
     int totalPassengers;
     double departingTicketPrice;
     double returnTicketPrice;
-    double totalTicketPrice; 
+    double totalTicketPrice;
     BookingClass bookingClass;
     TripDestination tripDestination;
     String TripDestination;
