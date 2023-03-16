@@ -453,7 +453,7 @@ public class FlightBooking {
             setPassengerAge(i, scanner.nextInt());
             scanner.nextLine();
 
-            setTicketNumber(i);
+            setTicketNumber(i); 
         }
     }
     }
