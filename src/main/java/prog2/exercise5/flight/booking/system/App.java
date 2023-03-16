@@ -11,67 +11,67 @@ public class App
         System.out.println( "Hello World!" );
     }
     String flightCompany;
-    String flightID;
-    LocalDate departureDate;
-    LocalDate returnDate;
-    int childPassengers;
-    int adultPassengers;
-    int totalPassengers;
-    double departingTicketPrice;
-    double returnTicketPrice;
-    double totalTicketPrice;
-    BookingClass bookingClass;
-    TripDestination tripDestination;
-    String TripDestination;
-    TripSource tripSource;
-    String TripSource;
-    TripType tripType;
-    String SourceAirport;
-    String DestinationAirport;
-    int TripDate;
-    String[] passengerGender;
-    int[] passengerAge;
-    Scanner scanner;
-    String[] ticketNumber;
-    int totalTickets;
-    String[] passengerFullName;
-    String [] fullName = {"Matt Jive", "Sally Fields", "Posh Quattro"};
-    String [] gender = {"Male", "Female", "Other"};
-    int [] age = {43, 32, 21};
-    int size = 3;
+    String flightID;
+    LocalDate departureDate;
+    LocalDate returnDate;
+    int childPassengers;
+    int adultPassengers;
+    int totalPassengers;
+    double departingTicketPrice;
+    double returnTicketPrice;
+    double totalTicketPrice;
+    BookingClass bookingClass;
+    TripDestination tripDestination;
+    String TripDestination;
+    TripSource tripSource;
+    String TripSource;
+    TripType tripType;
+    String SourceAirport;
+    String DestinationAirport;
+    int TripDate;
+    String[] passengerGender;
+    int[] passengerAge;
+    Scanner scanner;
+    String[] ticketNumber;
+    int totalTickets;
+    String[] passengerFullName;
+    String [] fullName = {"Matt Jive", "Sally Fields", "Posh Quattro"};
+    String [] gender = {"Male", "Female", "Other"};
+    int [] age = {43, 32, 21};
+    int size = 3;
 public FlightBooking(int totalTickets) {
-        this.totalTickets = totalTickets;
-        this.passengerFullName = new String[totalTickets];
-        this.passengerGender = new String[totalTickets];
-        this.passengerAge = new int[totalTickets];
-        this.ticketNumber = new String[totalTickets];
-    }
- enum TripType{
-        ONE_WAY,RETURN
-    }
-    enum BookingClass{
-        FIRST,BUSINESS,ECONOMY
-    }
-    enum TripSource{
-        NANJING,BEIJING,SHANGHAI,OULU,HELSINKI,PARIS
-    }
-    enum TripDestination{
-        NANJING,BEIJING,SHANGHAI,OULU,HELSINKI,PARIS
-    }
-    enum SourceAirport{
-        NANJING_LUKOU_INTERNATIONAL_AIRPORT,BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
-        SHANGHAI_PUDONG_INTERNATIONAL_AIRPORT,OULU_AIRPORT,HELSINKI_AIRPORT,
-        PARIS_CHARLES_DE_GAULLE_AIRPORT
-    }
-    enum DestinationAirport{
-        NANJING_LUKOU_INTERNATIONAL_AIRPORT,BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
-        SHANGHAI_PUDONG_INTERNATIONAL_AIRPORT,OULU_AIRPORT,HELSINKI_AIRPORT,
-        PARIS_CHARLES_DE_GAULLE_AIRPORT
-    }
+        this.totalTickets = totalTickets;
+        this.passengerFullName = new String[totalTickets];
+        this.passengerGender = new String[totalTickets];
+        this.passengerAge = new int[totalTickets];
+        this.ticketNumber = new String[totalTickets];
+    }
+ enum TripType{
+        ONE_WAY,RETURN
+    }
+    enum BookingClass{
+        FIRST,BUSINESS,ECONOMY
+    }
+    enum TripSource{
+        NANJING,BEIJING,SHANGHAI,OULU,HELSINKI,PARIS
+    }
+    enum TripDestination{
+        NANJING,BEIJING,SHANGHAI,OULU,HELSINKI,PARIS
+    }
+    enum SourceAirport{
+        NANJING_LUKOU_INTERNATIONAL_AIRPORT,BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
+        SHANGHAI_PUDONG_INTERNATIONAL_AIRPORT,OULU_AIRPORT,HELSINKI_AIRPORT,
+        PARIS_CHARLES_DE_GAULLE_AIRPORT
+    }
+    enum DestinationAirport{
+        NANJING_LUKOU_INTERNATIONAL_AIRPORT,BEIJING_CAPITAL_INTERNATIONAL_AIRPORT,
+        SHANGHAI_PUDONG_INTERNATIONAL_AIRPORT,OULU_AIRPORT,HELSINKI_AIRPORT,
+        PARIS_CHARLES_DE_GAULLE_AIRPORT
+    }
 
-    public  String getPassengerGender(int index){
-        return passengerGender[index] ;
-    }
+    public  String getPassengerGender(int index){
+        return passengerGender[index] ;
+    }
     public void setPassengerGender(int index, String passengerGender){
         this.passengerGender = new String[]{"Male", "Female", "Other"};
     }
