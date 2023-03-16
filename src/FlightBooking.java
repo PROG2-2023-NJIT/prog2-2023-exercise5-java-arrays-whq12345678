@@ -5,19 +5,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class FlightBooking {
-
-    // static String usingMath(int length) {
-    //     String alphabetsInUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    //     String numbers = "0123456789";
-    //     String flightID = alphabetsInUpperCase + numbers;
-    //     StringBuffer randomString = new StringBuffer();
-    //     for (int i = 0; i < length; i++) {
-    //         int randomIndex = (int)(Math.random() * flightID.length());
-    //         randomString.append(flightID.charAt(randomIndex));
-    //     }
-    //     return randomString.toString();
-    // }
-
     String flightCompany;
     String flightID;
     LocalDate departureDate;
